@@ -1,5 +1,6 @@
 ﻿using Dapper;
 using Microsoft.Data.SqlClient;
+using Microsoft.EntityFrameworkCore;
 using RobiatsBook.DataAccess.Repository.IRepository;
 using RobiatsBookStore2.DataAccess.Data;
 using System;
