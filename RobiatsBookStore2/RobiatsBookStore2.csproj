@@ -18,6 +18,7 @@
   <ItemGroup>
     <ProjectReference Include="..\RobiatsBook.DataAccess\RobiatsBook.DataAccess.csproj" />
     <ProjectReference Include="..\RobiatsBook.Models\RobiatsBook.Models.csproj" />
+    <ProjectReference Include="..\RobiatsBook.Utility\RobiatsBook.Utility.csproj" />
   </ItemGroup>
 
 </Project>
