@@ -279,4 +279,7 @@ i added the upsert view to take care of creating and updating CoverType
 and the delete CoverType is done using the API Call.
 Tried and everything is working perfectly well
 
-
+12:20
+Started with creating the Product CRUD
+i created a product class in the models and added the product to the database
+i added the migration  20231120174109_addProductToDb
