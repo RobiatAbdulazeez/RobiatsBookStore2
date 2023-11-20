@@ -314,3 +314,9 @@ I also modify the ProductVM class so that it is public and i installed the Micro
 Imodified the ProductController so the IActionResult Upsert to call the ProductVM view mode
 i included the using RobiatsBook.Models.ViewsModels;
 using Microsoft.AspNetCore.Mvc.Rendering; and all errors gone
+
+6:20
+I modified the API call to include th category and the CoverType properties
+i added an index view and copied the code from my index.cshtml from the Views/category and used it to modify my product
+and modified my code to include the Title,ISBN,Price,Author and the category  and i also created a product.js file
+i linked m project with the product.js file i created earlier
