@@ -302,3 +302,15 @@ i updated the database and everything is working perfectly fine
 i added the product to the repository and added the IProductRepository interface also made some changes in the update method in the ProductRepository 
 i added the product of unit of work and ther Iunit of work
 built the project and everything is working perfectly
+
+6:00
+I created a product Controller in the Areas,Admin Controller to perform the CRUD operation
+I added the IWebHostEnvironmrnt and i added it using statement to the INCLUDE THE using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Mvc;
+
+6:15
+In the models project i created the ProjectVM class to hold the product object and select list for Category and the CoverType
+I also modify the ProductVM class so that it is public and i installed the Microsoft.Asp.NetCore.Mvc.ViewFeaturespackage
+Imodified the ProductController so the IActionResult Upsert to call the ProductVM view mode
+i included the using RobiatsBook.Models.ViewsModels;
+using Microsoft.AspNetCore.Mvc.Rendering; and all errors gone
