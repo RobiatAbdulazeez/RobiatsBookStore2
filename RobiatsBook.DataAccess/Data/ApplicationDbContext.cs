@@ -1,6 +1,6 @@
-﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+﻿using RobiatsBook.Models;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-using RobiatsBook.Models;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -15,6 +15,6 @@ namespace RobiatsBookStore2.DataAccess.Data
         }
         public DbSet<Category> Categories { get; set; }
         public DbSet<CoverType> CoverTypes { get; set; }
-        public DbSet<Product> Products { get; set; } //adding product to the database
+        public DbSet<Product> Products { get; set; }
     }
 }

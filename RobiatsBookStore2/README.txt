@@ -283,3 +283,22 @@ Tried and everything is working perfectly well
 Started with creating the Product CRUD
 i created a product class in the models and added the product to the database
 i added the migration  20231120174109_addProductToDb
+
+
+2:00
+I created  the product class to the model project and added the the migration
+i got an empty migration
+the product was not added to the database i dont know what i did wrong
+
+2:30
+still trying to figure out what the error is 
+figured it out i was supposed to add the  public DbSet<Product> Products { get; set; } after the migration
+i did it again and it is working perfectly i updated the database
+
+
+3:00
+i updated the product class so that the title isbn and the author are not left empty,i added the migration to the database
+i updated the database and everything is working perfectly fine
+i added the product to the repository and added the IProductRepository interface also made some changes in the update method in the ProductRepository 
+i added the product of unit of work and ther Iunit of work
+built the project and everything is working perfectly
