@@ -247,3 +247,36 @@ I reviewed the code and everything is working perfectly
 
 
 
+
+
+
+2023-11-15 5:00
+
+Started Part three of the project
+I cleaned and built the project and everything was working perfectly
+i started by adding the migration ADD cover type to the db 20231116024753_AddCoverTypeToDb
+
+2023-11-20 11:27
+I created the CoverType following the same methods used for the Category CRUD in section two
+I added the CoverType.cs in the Model's folder which includes the ID and the name
+
+11:35
+i added the CoverType to the Repository and also added the ICoverTypeRepository class in the Data Access project
+also added the ICoverRepository interface in the IRepository folder
+
+11:50
+i added thE CoverType to the UnitOfWork and the IUnit of work
+
+12:01
+I added the CoverType to the NavBar on the home page 
+i also added the CoverType Controller with the all required action methods
+I created the CoverType Index View to use the data tables
+i had a little issue with the script file linkage , i had three @ in the script linking part and i could proceed
+
+12:15
+issues fixed and everything is working perfectly
+i added the upsert view to take care of creating and updating CoverType
+and the delete CoverType is done using the API Call.
+Tried and everything is working perfectly well
+
+
