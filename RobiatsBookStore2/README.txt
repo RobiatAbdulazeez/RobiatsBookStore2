@@ -320,3 +320,8 @@ I modified the API call to include th category and the CoverType properties
 i added an index view and copied the code from my index.cshtml from the Views/category and used it to modify my product
 and modified my code to include the Title,ISBN,Price,Author and the category  and i also created a product.js file
 i linked m project with the product.js file i created earlier
+
+7:00
+I created an Upsert.cs for products and modify in Area/Admin/Views and i used the product file provided for us in the assignment folder 
+i also added a rich textbox to the text are inside the product with the tiny.cloud by creating an account and using the api key generated
+i checjed the product create button and everything is working perfectly
