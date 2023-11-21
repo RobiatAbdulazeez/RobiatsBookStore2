@@ -324,4 +324,9 @@ i linked m project with the product.js file i created earlier
 7:00
 I created an Upsert.cs for products and modify in Area/Admin/Views and i used the product file provided for us in the assignment folder 
 i also added a rich textbox to the text are inside the product with the tiny.cloud by creating an account and using the api key generated
-i checjed the product create button and everything is working perfectly
+i checked the product create button and everything is working perfectly
+
+2023-11-21 2:43
+I created a new folder and subfolder in the wwwroot/images/products
+in the productController i configured the product Upsert Post action method
+i checked the project and it is working perfectly
