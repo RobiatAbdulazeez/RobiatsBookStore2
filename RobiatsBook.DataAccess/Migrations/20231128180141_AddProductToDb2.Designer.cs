@@ -10,7 +10,7 @@ using RobiatsBookStore2.DataAccess.Data;
 namespace RobiatsBook.DataAccess.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20231127232628_AddProductToDb2")]
+    [Migration("20231128180141_AddProductToDb2")]
     partial class AddProductToDb2
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

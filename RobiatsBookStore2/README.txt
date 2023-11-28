@@ -403,3 +403,8 @@ IEnumerable<Product> productList = _unitOfWork.Product.GetAll(includeProperties:
                         </div>
                         <div style="padding-left:5px;">
                             <p style="color:maroon">As low as: <b class="">$@product.Price100.ToString("0.00")</b></p>
+
+
+ 2023-11-28 1:07
+i tried to run the application but i ran into an error so i figured it out that i needed to add a migration
+i added the migration 20231128180141_AddProductToDb2 and updated my database and i am able to update my database now and everything works perfectly
