@@ -2,7 +2,9 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 
 
 namespace RobiatsBook.Models
@@ -21,7 +23,7 @@ namespace RobiatsBook.Models
 
         [Required]
         [Range(1, 10000)]
-        public double ListPrice { get; set; }
+        public double Price { get; set; }
         public string ImageUrl { get; set; }
 
         [Required]

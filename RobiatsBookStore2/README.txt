@@ -330,3 +330,76 @@ i checked the product create button and everything is working perfectly
 I created a new folder and subfolder in the wwwroot/images/products
 in the productController i configured the product Upsert Post action method
 i checked the project and it is working perfectly
+
+
+2023-11-15 5:00
+I started the 4th part 
+In my product.cs i added the using System.Linq; and the using System.Threading.Tasks;
+in the product.cs i also added the the  public int CoverTypeId { get; set; }
+        [ForeignKey("CoverTypeId")]
+
+2023-11-27 6:00  
+ In the ProductController i added the using System.IO;
+ and i commented out the  /*[HttpPost]
+
+7:00
+ in the productController i added the [ValidateAntiForgeryToken]
+ and string webRootPath = _hostEnvironment.WebRootPath;
+            var imagePath = Path.Combine(webRootPath, objFromDb.ImageUrl.TrimStart('\\'));
+            if (System.IO.File.Exists(imagePath))
+            {
+                System.IO.File.Delete(imagePath);
+            }
+
+7:10
+in the product Upsert i added the
+<span asp-validation-for="Product.Author" class="text-danger"></span>
+
+7:20
+I ADDED The form group in the product upsert
+ @Html.DropDownListFor(m => m.Product.CoverTypeId, Model.CoverTypeList, "-Select a Cover Type",
+ and the doucment uploadBox
+ if (document.getElementById("uploadBox").value === "")
+
+ 7:25
+ in my home Controller.cs
+ i added the using statements 
+using RobiatsBook.Models;
+using RobiatsBook.DataAccess.Repository.IRepository;
+using Microsoft.AspNetCore.Mvc;
+
+7:30
+I also added the   private readonly IUnitOfWork _unitOfWork;
+and i took out the comments out the   /* public HomeController(ILogger<HomeController> logger);*/
+and 
+  public HomeController(ILogger<HomeController> logger, IUnitOfWork unitOfWork)
+
+7:38
+i also added the  _unitOfWork = unitOfWork; in the file
+and also added the    
+IEnumerable<Product> productList = _unitOfWork.Product.GetAll(includeProperties: "Category,CoverType");
+            return View(productList);
+
+  7:47
+  i tried to run the application and everything is working perfectly
+  in my index.cshtml
+  i added the @model IEnumerabl<RobiatsBook.Models.Product> and also added the div class thats add a white background
+
+  <div class="row pb-3 backgroundWhite">
+
+    @foreach (var product in Model)
+    {
+        <div class="col-lg-3 col-md-6">
+            <div class="row p-2">
+                <div class="col-12  p-1" style="border:1px solid #008cba; border-radius: 5px;">
+                    <div class="card" style="border:0px;">
+                        <img src="@product.ImageUrl" class="card-img-top rounded" />
+                        <div class="pl-1">
+                            <p class="card-title h5"><b style="color:#2c3e50">@product.Title</b></p>
+                            <p class="card-title text-primary">by <b>@product.Author</b></p>
+                        </div>
+                        <div style="padding-left:5px;">
+                            <p>List Price: <strike><b class="">$ @product.ListPrice.ToString("0.00")</b></strike></p>
+                        </div>
+                        <div style="padding-left:5px;">
+                            <p style="color:maroon">As low as: <b class="">$@product.Price100.ToString("0.00")</b></p>
