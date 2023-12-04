@@ -408,3 +408,7 @@ IEnumerable<Product> productList = _unitOfWork.Product.GetAll(includeProperties:
  2023-11-28 1:07
 i tried to run the application but i ran into an error so i figured it out that i needed to add a migration
 i added the migration 20231128180141_AddProductToDb2 and updated my database and i am able to update my database now and everything works perfectly
+
+2023-12-4 11:41
+i had a local host warning popping up about the datatypethe error is coming from my product.js file i had Category.Name instead of Category.name
+the small n is where the issue is coming from
