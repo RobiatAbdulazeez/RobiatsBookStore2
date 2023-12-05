@@ -412,3 +412,6 @@ i added the migration 20231128180141_AddProductToDb2 and updated my database and
 2023-12-4 11:41
 i had a local host warning popping up about the datatypethe error is coming from my product.js file i had Category.Name instead of Category.name
 the small n is where the issue is coming from
+
+2023-12-5 2:21
+for the database exception notification that pops up, means that the database needs to be updated first by typing the update-database to the console.
